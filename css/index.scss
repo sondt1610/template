@@ -1,0 +1,52 @@
+@import 'reset.scss';
+@import 'variable.scss';
+@import 'global.scss';
+
+/* Main sectin */
+body{
+    max-width: 1920px;
+	background: $main-bg;
+	margin: 0 auto;
+}
+header{
+    height: 212px;
+    #header_infor{
+        height: 175px;
+        display: flex;
+        max-width: 1142px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        .flag{
+            margin-left: 28px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        .flag:first-child{
+            margin-left: 0;
+        }
+    }
+}
+#slider{
+    max-width: 1920px;
+    height: 770px;
+    .owl-carousel{
+        position: relative;
+        .owl-dots{
+            position: absolute;
+            left:25%;
+            right:25%;
+            bottom: 50px;
+            .owl-dot{
+                span {
+                    border: 1px solid #eeeeee;
+                    background: transparent;
+                }
+                &.active{
+                    span{
+                        background: #eeeeee;
+                    }
+                }
+            }
+        }
+    }
+}

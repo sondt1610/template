@@ -1,0 +1,81 @@
+/*GLOBAL */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Main sectin */
+body {
+  max-width: 1920px;
+  background: #ffffff;
+  margin: 0 auto; }
+
+header {
+  height: 212px; }
+  header #header_infor {
+    height: 175px;
+    display: flex;
+    max-width: 1142px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center; }
+    header #header_infor .flag {
+      margin-left: 28px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); }
+    header #header_infor .flag:first-child {
+      margin-left: 0; }
+
+#slider {
+  max-width: 1920px;
+  height: 770px; }
+  #slider .owl-carousel {
+    position: relative; }
+    #slider .owl-carousel .owl-dots {
+      position: absolute;
+      left: 25%;
+      right: 25%;
+      bottom: 50px; }
+      #slider .owl-carousel .owl-dots .owl-dot span {
+        border: 1px solid #eeeeee;
+        background: transparent; }
+      #slider .owl-carousel .owl-dots .owl-dot.active span {
+        background: #eeeeee; }
+
+/*# sourceMappingURL=index.css.map */

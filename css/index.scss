@@ -50,7 +50,6 @@ header{
         }
         .owl-item {
             position: relative;
-            z-index: 3;
             &:before {
                 content: "";
                 position: absolute;
@@ -59,8 +58,13 @@ header{
                 right:0;
                 bottom:0;
                 background: linear-gradient(transparent, rgba(16, 68, 128, 0.8));
-                z-index: 4;
+            }
+            img {
+                height: 770px;
             }
         }
     }
+}
+#products{
+    margin-top: 114px;
 }

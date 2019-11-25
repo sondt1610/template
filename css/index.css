@@ -78,8 +78,7 @@ header {
       #slider .owl-carousel .owl-dots .owl-dot.active span {
         background: #eeeeee; }
     #slider .owl-carousel .owl-item {
-      position: relative;
-      z-index: 3; }
+      position: relative; }
       #slider .owl-carousel .owl-item:before {
         content: "";
         position: absolute;
@@ -87,7 +86,11 @@ header {
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(transparent, rgba(16, 68, 128, 0.8));
-        z-index: 4; }
+        background: linear-gradient(transparent, rgba(16, 68, 128, 0.8)); }
+      #slider .owl-carousel .owl-item img {
+        height: 770px; }
+
+#products {
+  margin-top: 114px; }
 
 /*# sourceMappingURL=index.css.map */

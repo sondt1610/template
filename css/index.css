@@ -77,5 +77,17 @@ header {
         background: transparent; }
       #slider .owl-carousel .owl-dots .owl-dot.active span {
         background: #eeeeee; }
+    #slider .owl-carousel .owl-item {
+      position: relative;
+      z-index: 3; }
+      #slider .owl-carousel .owl-item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(transparent, rgba(16, 68, 128, 0.8));
+        z-index: 4; }
 
 /*# sourceMappingURL=index.css.map */

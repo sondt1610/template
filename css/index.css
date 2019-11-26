@@ -91,6 +91,80 @@ header {
         height: 770px; }
 
 #products {
-  margin-top: 114px; }
+  display: flex;
+  max-width: 1142px;
+  margin: 114px auto 0 auto;
+  flex-wrap: wrap; }
+  #products .one_product {
+    text-align: center;
+    flex: 0 0 50%; }
+    #products .one_product h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 40pt;
+      font-weight: bold;
+      color: #104480; }
+      #products .one_product h3:after {
+        content: "";
+        width: 150px;
+        height: 5px;
+        display: block;
+        background: #d71635;
+        margin: 16px auto 50px auto; }
+    #products .one_product .product_infor {
+      position: absolute;
+      background: #eeeeee;
+      width: 421px;
+      height: 613px;
+      margin-left: 67px; }
+      #products .one_product .product_infor img {
+        position: absolute;
+        top: 55px;
+        left: -48px; }
+    #products .one_product span.product_intro {
+      font-family: 'Encode Sans', sans-serif;
+      line-height: 22px;
+      margin-top: 420px;
+      margin-bottom: 37px;
+      width: 283px;
+      display: inline-block;
+      color: #626262; }
+    #products .one_product .view_product_detail {
+      display: block;
+      background: #d71635;
+      border-radius: 10px;
+      padding: 15px 87px;
+      margin: 0 auto;
+      outline: none;
+      border: none;
+      color: #ffffff;
+      font-size: 17.99pt;
+      text-transform: uppercase;
+      font-family: 'Encode Sans', sans-serif; }
+
+#base {
+  background: red;
+  display: inline-block;
+  height: 55px;
+  margin-left: 20px;
+  margin-top: 55px;
+  position: relative;
+  width: 100px; }
+
+#base:before {
+  border-bottom: 35px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -35px;
+  width: 0; }
+
+.trapezoid {
+  border-bottom: 50px solid #555;
+  border-left: 25px solid transparent;
+  height: 0;
+  width: 125px; }
 
 /*# sourceMappingURL=index.css.map */

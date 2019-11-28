@@ -111,7 +111,7 @@ header {
         background: #d71635;
         margin: 16px auto 50px auto; }
     #products .one_product .product_infor {
-      position: absolute;
+      position: relative;
       background: #eeeeee;
       width: 421px;
       height: 613px;
@@ -141,44 +141,8 @@ header {
       text-transform: uppercase;
       font-family: 'Encode Sans', sans-serif; }
 
-#base {
-  background: red;
-  display: inline-block;
-  height: 55px;
-  margin-left: 20px;
-  margin-top: 55px;
-  position: relative;
-  width: 100px; }
-
-#base:before {
-  border-bottom: 35px solid red;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  content: "";
-  height: 0;
-  left: 0;
-  position: absolute;
-  top: -35px;
-  width: 0; }
-
-.trapezoid {
-  border-bottom: 50px solid #555;
-  border-left: 25px solid transparent;
-  height: 0;
-  width: 125px; }
-
-#test {
-  margin-left: 20px;
-  margin-top: 55px;
-  display: inline-block;
-  position: relative;
-  height: 0px;
-  width: 0px;
-  border-top: 50px solid transparent;
-  border-right: 50px solid blue;
-  border-bottom: 50px solid transparent; }
-
 #test1 {
+  margin-left: 100px;
   width: 50px;
   height: 50px;
   background: red;
@@ -194,33 +158,5 @@ header {
   content: "";
   left: -50px;
   position: absolute; }
-
-#pointer {
-  width: 200px;
-  height: 40px;
-  position: relative;
-  background: red; }
-
-#pointer:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 20px solid white;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent; }
-
-#pointer:before {
-  content: "";
-  position: absolute;
-  right: -20px;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 20px solid red;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent; }
 
 /*# sourceMappingURL=index.css.map */

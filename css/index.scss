@@ -13,7 +13,7 @@ header{
     #header_infor{
         height: 175px;
         display: flex;
-        max-width: 1142px;
+        max-width: 1140px;
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
@@ -70,7 +70,7 @@ header{
 }
 #products{
     display: flex;
-    max-width: 1142px;
+    max-width: 1140px;
     margin: 114px auto 0 auto;
     flex-wrap: wrap;
     // font-family: 'Encode Sans', sans-serif;
@@ -145,23 +145,6 @@ header{
         background-color: rgba(16, 68, 128, 0.8);
         position: absolute;
     }
-    .title{
-        margin: 70px auto 0 auto;
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        font-size: 45px;
-        font-weight: bold;
-        color: #ffffff;
-        text-transform: uppercase;
-        &:after {
-            content: "";
-            width: 150px;
-            height: 5px;
-            display: block;
-            background: #d71635;
-            margin: 16px auto 50px auto;
-        }
-    }
     #wrap_all_services{
         margin-left: 390px;
         display: flex;
@@ -221,6 +204,8 @@ header{
     }
     #wrap_service_info{
         // margin-left: 684px;
+        font-family: 'Oswald', sans-serif;
+        padding-right: 30px;
         width: 487px;
         height: 508px;
         background: #eeeeee;
@@ -230,6 +215,13 @@ header{
         img.service_info_img{
             padding: 40px 0 30px 0;
             width: 100%;
+        }
+        a.view_detail_service {
+            font-family: 'Encode Sans', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #d71635;
+            text-decoration: none;
         }
     }
     #wrap_service_info:before {
@@ -241,5 +233,216 @@ header{
         content: "";
         left: -102px;
         position: absolute;
+    }
+    .service_info_title {
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 28px;
+        color: #626262;
+        padding-bottom: 12px;
+    }
+    .service_detail_info {
+        font-family: 'Encode Sans', sans-serif;
+        font-size: 16px;
+        line-height: 23px;
+        color: #949494;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+    #services_highlights {
+        width: 295px;
+        font-size: 23px;
+        font-family: 'Oswald', sans-serif;
+        background: #ffffff;
+        opacity: 0.7;
+        height: 508px;
+        h3{
+            margin: 70px 45px 9px 40px;
+            color: #104480;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+            color: #626262;
+            font-size: 23px;
+            font-weight: bold;
+            border-bottom: 1px solid #949494;
+            margin: 0 40px 0 14px;
+            padding: 26px;
+            &:last-child{
+                border-bottom: none;
+            }
+            img {
+                margin-right: 19px;
+            }
+        }
+    }
+    img.service_person {
+        position: relative;
+        top: 0;
+        left: -88px;
+    }
+}
+.title{
+    margin: 70px auto 0 auto;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    &:after {
+        content: "";
+        width: 150px;
+        height: 5px;
+        display: block;
+        background: #d71635;
+        margin: 16px auto 50px auto;
+    }
+}
+.date {
+    color: #eeeeee;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+.view_detail_news{
+    margin: 15px 0;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Encode Sans', sans-serif;
+    }
+}
+#news{
+    margin: 85px auto 105px auto;
+    .news_title{
+        color: #104480;
+    }
+    .row{
+        height: 555px;
+    }
+    .larger_news{
+        background: url('../images/img_news_1.png');
+        height: 555px;
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: "";
+            display: block;
+            background: rgba(16, 68, 128, 0.8);
+            width: 100%;
+            height: 55%;
+            position: absolute;
+            bottom: 0;
+            transform: skewY(6deg);
+            transform-origin: 0 100%;
+        }
+        #larger_news_content {
+            font-family: 'Oswald', sans-serif;
+            position: absolute;
+            bottom: 0;
+            padding: 0 67px;
+            color: #ffffff;
+            .larger_news_title {
+                text-align: left;
+                font-size: 32px;
+                margin: 10px 0;
+                text-transform: none;
+                line-height: 32px;
+                font-weight: bold;
+                &::after{
+                    margin: 16px 0 20px 0;
+                }
+            }
+            .larger_news_detail {
+                font-family: 'Encode Sans', sans-serif;
+                color: #eeeeee;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
+    }
+    .small_news{
+        .date {
+            color: #949494;
+        }
+        .small_news_title {
+            color: #104480;
+            font-weight: bold;
+            font-size: 23px;
+            font-family: 'Oswald', sans-serif;
+            margin: 15px 0 45px 0;
+        }
+        .small_news_detail {
+            font-family: 'Encode Sans', sans-serif;
+            margin-top: 30px;
+            color: #626262;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .view_detail_news{
+            margin: 20px 0 15px 0;
+            a{
+                color: #d71635;
+            }
+        }
+    }
+}
+section#recruitment {
+    height: 594px;
+    display: flex;
+    flex-wrap: wrap;
+    .recruitment_info {
+        width: 33%;
+        background: #104480;
+        padding: 210px 56px 0 217px;
+        text-align: right;
+    }
+    .recruitment_title {
+        margin: 0;
+        text-align: right;
+        &::after{
+            display: inline-block;
+        }
+    }
+    .recruitment_content {
+        font-family: 'Encode Sans', sans-serif;
+        font-size: 15.99px;
+        line-height: 21px;
+        color: #fffefe;
+    }
+    button.read_more {
+        width: 250px;
+        height: 55px;
+        line-height: 25px;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 30px auto;
+        color: #fff;
+        background: #da2238;
+        font-family: 'Encode Sans', sans-serif;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        padding: 0;
+    }
+    div#wrap_recruitment_items {
+        width: 67%;
+        display: flex;
+        .recruitment_item {
+            flex: 1;
+            background: url('../images/recruitment1.png') no-repeat;
+        }
     }
 }

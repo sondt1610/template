@@ -440,9 +440,58 @@ section#recruitment {
     div#wrap_recruitment_items {
         width: 67%;
         display: flex;
-        .recruitment_item {
+        .wrap_recruitment_item {
             flex: 1;
             background: url('../images/recruitment1.png') no-repeat;
+            position: relative;
+            overflow: hidden;
+            .recruitment_item{
+                padding: 45px 55px 135px 58px;
+                position: relative;
+            }
+            &:hover{
+                &::before{
+                    height: 110%;
+                }
+                .recruitment_item_detail, .view_detail_news {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            &::before{
+                content: "";
+                display: block;
+                background: rgba(16, 68, 128, 0.8);
+                width: 100%;
+                height: 30%;
+                position: absolute;
+                transform: skewY(-7deg);
+                transform-origin: 0 0;
+                transition: all 0.5s ease-out;
+            }
+            .recruitment_item_title {
+                margin: 35px 0 58px;
+                color: #ffffff;
+                font-family: 'Oswald', sans-serif;
+                font-weight: bold;
+                font-size: 32px;
+                text-transform: uppercase;
+            }
+            .recruitment_item_detail {
+                padding-bottom: 50px;
+                color: #eeeeee;
+                font-family: 'Encode Sans', sans-serif;
+                font-size: 16px;
+                line-height: 20px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 1s ease-out;
+            }
+            .view_detail_news{
+                opacity: 0;
+                visibility: hidden;
+                transition: all 1s ease-out;
+            }
         }
     }
 }

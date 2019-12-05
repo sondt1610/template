@@ -1355,4 +1355,7 @@ section#recruitment {
         visibility: hidden;
         transition: all 1s ease-out; }
 
+footer {
+  margin-top: 80px; }
+
 /*# sourceMappingURL=index.css.map */

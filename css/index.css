@@ -970,6 +970,112 @@ header {
     header #header_infor .flag:first-child {
       margin-left: 0; }
 
+nav {
+  position: relative;
+  height: 72px;
+  z-index: 10; }
+  nav .container {
+    padding-left: 0;
+    padding-right: 0; }
+  nav ul.sub_menu {
+    opacity: 0;
+    visibility: hidden; }
+  nav .language {
+    width: 60px;
+    height: 20px;
+    display: inline-block;
+    background: #5e89d8;
+    position: relative;
+    border-radius: 5px; }
+    nav .language a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      line-height: 20px;
+      text-decoration: none;
+      width: 37px;
+      background: #ffffff;
+      border-radius: 5px;
+      color: #5e89d8;
+      font-family: 'Oswald', sans-serif;
+      font-size: 14px; }
+  nav .container > ul {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    background: #104480;
+    padding: 0 50px;
+    height: 72px; }
+    nav .container > ul li.products_menu_item {
+      position: static;
+      text-align: unset; }
+    nav .container > ul .products_menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      display: flex; }
+      nav .container > ul .products_menu .one_menu_product {
+        position: relative;
+        flex: 1; }
+        nav .container > ul .products_menu .one_menu_product::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 60%;
+          bottom: 0;
+          left: 0;
+          background: red; }
+    nav .container > ul > li:hover ul.sub_menu {
+      opacity: 1;
+      visibility: visible;
+      background: #ffffff;
+      position: absolute;
+      top: 72px;
+      left: 22px;
+      width: 220px; }
+      nav .container > ul > li:hover ul.sub_menu a {
+        color: #626262;
+        text-decoration: none; }
+      nav .container > ul > li:hover ul.sub_menu li {
+        line-height: 55px;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 16px; }
+      nav .container > ul > li:hover ul.sub_menu li:hover a {
+        color: #104480; }
+    nav .container > ul > li.active > a, nav .container > ul > li:hover > a {
+      color: #5e89d8;
+      text-decoration: none; }
+      nav .container > ul > li.active > a::after, nav .container > ul > li:hover > a::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 7px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #5e89d8; }
+    nav .container > ul li.wrap_language {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    nav .container > ul > li {
+      flex: 1;
+      text-align: center;
+      line-height: 72px;
+      position: relative; }
+      nav .container > ul > li > a {
+        font-family: 'Oswald', sans-serif;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
+        position: relative;
+        display: inline-block; }
+
 #slider {
   max-width: 1920px;
   height: 770px; }
@@ -1357,5 +1463,43 @@ section#recruitment {
 
 footer {
   margin-top: 80px; }
+  footer .title.contact_title {
+    color: #104480;
+    text-align: left; }
+    footer .title.contact_title::after {
+      margin: 0;
+      position: relative;
+      top: 85px;
+      left: 0px;
+      width: 75px; }
+  footer .row.footer_infor {
+    margin: 63px 0; }
+    footer .row.footer_infor p {
+      margin: 0 0 55px;
+      font-size: 14px;
+      color: #949494;
+      font-family: 'Encode Sans', sans-serif;
+      line-height: 25px; }
+      footer .row.footer_infor p:last-child {
+        margin: 0; }
+  footer .company_info_title {
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #626262;
+    margin-bottom: 21px; }
+  footer .logo_footer {
+    text-align: center;
+    width: 100%; }
+    footer .logo_footer p {
+      margin: 30px 0;
+      font-size: 15px;
+      color: #949494;
+      font-family: 'Encode Sans', sans-serif; }
+
+#map {
+  width: 100%;
+  height: 100%;
+  background-color: grey; }
 
 /*# sourceMappingURL=index.css.map */

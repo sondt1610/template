@@ -26,6 +26,92 @@
                 <img src="./images/flag_6.png" alt="logo" class="flag">
             </div>
           </div>
+          <nav>
+            <div class="container">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span>Trang chủ</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#">
+                    <span>Giới thiệu</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </a>
+                  <ul class="sub_menu">
+                    <li>
+                      <a href="#">
+                        <span>Về chúng tôi</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>Dự án tiêu biểu</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="products_menu_item">
+                  <a href="#">
+                    <span>Sản phẩm</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </a>
+                  <div class="products_menu">
+                    <div class="one_menu_product">
+                      <div class="title_menu_product">
+                        Máy phát điện Nhật Bản
+                      </div>
+                      <ul>
+                        <li>DCA Series</li>
+                        <li>Ultra Silence</li>
+                        <li>Small range</li>
+                        <li>DCA Perkins Series</li>
+                      </ul>
+                    </div>
+                    <div class="one_menu_product">
+                      <div class="title_menu_product">
+                        Máy phát điện Nhật Bản
+                      </div>
+                      <ul>
+                        <li>DCA Series</li>
+                        <li>Ultra Silence</li>
+                        <li>Small range</li>
+                        <li>DCA Perkins Series</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Dịch vụ</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Tin tức</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Tuyển dụng</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Liên hệ</span>
+                  </a>
+                </li>
+                <li class="wrap_language">
+                  <div class="language">
+                    <a href="#">
+                      Vie
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
       </header>
       <section id="slider">
         <div class="owl-carousel owl-theme">
@@ -258,11 +344,11 @@
         </div>
       </section>
       <footer>
-          <h3 class="title contact_title">
-            Liên hệ
-          </h3>
           <div class="container">
-            <div class="row">
+            <h3 class="title contact_title">
+              Liên hệ
+            </h3>
+            <div class="row footer_infor">
               <div class="col-md-4 offset-md-1">
                 <h4 class="company_info_title">Trụ sở chính</h4>
                 <p>
@@ -290,7 +376,13 @@
                 </p>
               </div>
               <div class="col-md-7">
-
+                <div id="map"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="logo_footer">
+                <img src="./images/logo_footer.png" alt="logo footer">
+                <p>Copyright 2018 Factory & Industrial - All rights reserved</p>
               </div>
             </div>
           </div>
@@ -298,5 +390,20 @@
       <script src="js/jquery-1.12.3.min.js"></script>
       <script src="owlcarousel/owl.carousel.min.js"></script>
       <script src="js/index.js"></script>
+      <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru 21.016612, 105.825106
+          var uluru = {lat: 21.016612, lng: 105.825106};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 18, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdPqBgNAqAcmDEXfNdHRYBk3j-KQnePWg&callback=initMap">
+            </script>
   </body>
 </html>

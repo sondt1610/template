@@ -29,6 +29,136 @@ header{
         }
     }
 }
+nav {
+    position: relative;
+    height: 72px;
+    z-index: 10;
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    ul.sub_menu{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .language {
+        width: 60px;
+        height: 20px;
+        display: inline-block;
+        background: #5e89d8;
+        position: relative;
+        border-radius: 5px;
+        a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 20px;
+            text-decoration: none;
+            width: 37px;
+            background: #ffffff;
+            border-radius: 5px;
+            color: #5e89d8;
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+        }
+    }
+    .container >ul {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        background: #104480;
+        padding: 0 50px;
+        height: 72px;
+        li.products_menu_item{
+            position: static;
+            text-align: unset;
+        }
+        .products_menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            display: flex;
+            .one_menu_product{
+                position: relative;
+                flex: 1;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 60%;
+                    bottom: 0;
+                    left: 0;
+                    background: red;
+                }
+            }
+        }
+        &>li:hover{
+            ul.sub_menu{
+                opacity: 1;
+                visibility: visible;
+                background: #ffffff;
+                position: absolute;
+                top: 72px;
+                left: 22px;
+                width: 220px;
+                a{
+                    color: #626262;
+                    text-decoration: none;
+                }
+                li{
+                    line-height: 55px;
+                    text-align: left;
+                    padding-left: 20px;
+                    font-size: 16px;
+                }
+                li:hover{
+                    a{
+                        color: #104480;
+                    }
+                }
+            }
+        }
+        &>li.active, &>li:hover{
+            &>a{
+                color: #5e89d8;
+                text-decoration: none;
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 7px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: #5e89d8;
+                }
+            }
+        }
+        li.wrap_language{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &>li{
+            flex: 1;
+            text-align: center;
+            line-height: 72px;
+            position: relative;
+            &>a {
+                font-family: 'Oswald', sans-serif;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 16px;
+                position: relative;
+                display: inline-block;
+            }
+        }
+    }
+}
 #slider{
     max-width: 1920px;
     height: 770px;
@@ -497,4 +627,50 @@ section#recruitment {
 }
 footer{
     margin-top: 80px;
+    .title.contact_title {
+        color: #104480;
+        text-align: left;
+        &::after{
+            margin: 0;
+            position: relative;
+            top: 85px;
+            left: 0px;
+            width: 75px;
+        }
+    }
+    .row.footer_infor {
+        margin: 63px 0;
+        p {
+            margin: 0 0 55px;
+            font-size: 14px;
+            color: #949494;
+            font-family: 'Encode Sans', sans-serif;
+            line-height: 25px;
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+    .company_info_title {
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        color: #626262;
+        margin-bottom: 21px;
+    }
+    .logo_footer {
+        text-align: center;
+        width: 100%;
+        p {
+            margin: 30px 0;
+            font-size: 15px;
+            color: #949494;
+            font-family: 'Encode Sans', sans-serif;
+        }
+    }
 }
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+  }

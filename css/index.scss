@@ -733,10 +733,10 @@ section.services{
     .row{
         background: #104480;
     }
-    .left_img_service_item{
+    .service_img_item{
         padding: 0;
     }
-    .right_content_service_item{
+    .service_content_item{
         height: 514px;
         padding: 0;
         &::before{
@@ -747,6 +747,22 @@ section.services{
             content: "";
             left: -96px;
             position: absolute;
+        }
+    }
+    .left_service{
+        height: 514px;
+        padding: 0;
+        &::before{
+            height: 0px;
+            width: 0px;
+            border-top: 514px solid transparent;
+            border-left: 96px solid #104480;
+            content: "";
+            right: -96px;
+            position: absolute;
+            z-index: 2;
+            border-right: none;
+            left: auto;
         }
     }
     .service_detail_img{

@@ -1549,12 +1549,12 @@ section.services {
   margin-top: 32px; }
   section.services .row {
     background: #104480; }
-  section.services .left_img_service_item {
+  section.services .service_img_item {
     padding: 0; }
-  section.services .right_content_service_item {
+  section.services .service_content_item {
     height: 514px;
     padding: 0; }
-    section.services .right_content_service_item::before {
+    section.services .service_content_item::before {
       height: 0px;
       width: 0px;
       border-top: 514px solid transparent;
@@ -1562,6 +1562,20 @@ section.services {
       content: "";
       left: -96px;
       position: absolute; }
+  section.services .left_service {
+    height: 514px;
+    padding: 0; }
+    section.services .left_service::before {
+      height: 0px;
+      width: 0px;
+      border-top: 514px solid transparent;
+      border-left: 96px solid #104480;
+      content: "";
+      right: -96px;
+      position: absolute;
+      z-index: 2;
+      border-right: none;
+      left: auto; }
   section.services .service_detail_img {
     height: 100%;
     width: 100%; }

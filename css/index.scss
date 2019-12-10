@@ -157,7 +157,6 @@ nav {
                 li{
                     line-height: 55px;
                     text-align: left;
-                    padding-left: 20px;
                     font-size: 16px;
                 }
                 li:hover{
@@ -985,6 +984,29 @@ section.services{
             font-family: 'Encode Sans', sans-serif;
             color: #ffffff;
             line-height: 25px;
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width : 768px) {
+    #slider{
+        .dots{
+            bottom: 15px;
+        }
+    }
+}
+@media (min-width: 375px) and (max-width : 1200px) {
+    header{
+        padding: 0 30px;
+        #wrap_flags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            img{
+                margin-top: 20px;
+                width: 60px;
+                height: 40px;
+            }
         }
     }
 }

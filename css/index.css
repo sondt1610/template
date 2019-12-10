@@ -1076,7 +1076,6 @@ nav {
       nav .container > ul > li:hover ul.sub_menu li {
         line-height: 55px;
         text-align: left;
-        padding-left: 20px;
         font-size: 16px; }
       nav .container > ul > li:hover ul.sub_menu li:hover a {
         color: #104480; }
@@ -1739,6 +1738,20 @@ section.services {
       color: #ffffff;
       line-height: 25px; }
 
+@media (min-width: 375px) and (max-width: 768px) {
+  #slider .dots {
+    bottom: 15px; } }
+@media (min-width: 375px) and (max-width: 1200px) {
+  header {
+    padding: 0 30px; }
+    header #wrap_flags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      header #wrap_flags img {
+        margin-top: 20px;
+        width: 60px;
+        height: 40px; } }
 @media only screen and (max-width: 1200px) {
   header .menu-bar {
     opacity: 1;

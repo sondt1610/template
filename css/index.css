@@ -1276,13 +1276,10 @@ nav {
     background: #eeeeee; }
 
 #products {
-  display: flex;
   max-width: 1140px;
-  margin: 114px auto 0 auto;
-  flex-wrap: wrap; }
+  margin: 114px auto 0 auto; }
   #products .one_product {
-    text-align: center;
-    flex: 0 0 50%; }
+    text-align: center; }
     #products .one_product h3 {
       font-family: 'Oswald', sans-serif;
       font-size: 40px;
@@ -1298,13 +1295,8 @@ nav {
     #products .one_product .product_infor {
       position: relative;
       background: #eeeeee;
-      width: 421px;
-      height: 613px;
-      margin-left: 67px; }
-      #products .one_product .product_infor img {
-        position: absolute;
-        top: 55px;
-        left: -48px; }
+      width: 80%;
+      margin: 0 auto; }
     #products .one_product span.product_intro {
       font-family: 'Encode Sans', sans-serif;
       font-size: 16px;

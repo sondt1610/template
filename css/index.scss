@@ -435,15 +435,15 @@ nav {
     // }
 }
 #products{
-    display: flex;
+    // display: flex;
     max-width: 1140px;
     margin: 114px auto 0 auto;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     // font-family: 'Encode Sans', sans-serif;
     // font-family: 'Oswald', sans-serif;
     .one_product{
         text-align: center;
-        flex: 0 0 50%;
+        // flex: 0 0 50%;
         h3{
             font-family: 'Oswald', sans-serif;
             font-size: 40px;
@@ -462,14 +462,13 @@ nav {
             // background-image: url('../images/product1.png');
             position: relative;
             background: #eeeeee;
-            width: 421px;
-            height: 613px;
-            margin-left: 67px;
-            img{
-                position: absolute;
-                top: 55px;
-                left: -48px;
-            }
+            width: 80%;
+            margin: 0 auto;
+            // img{
+            //     position: absolute;
+            //     top: 55px;
+            //     left: -48px;
+            // }
         }
         span.product_intro{
             font-family: 'Encode Sans', sans-serif;

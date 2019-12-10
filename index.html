@@ -6,16 +6,84 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <script src="js/vendor/prefixfree.min.js"></script>
   </head>
   <body>
+      <!-- mobile-nav -->
+      <div id="NavDrawer" class="transition">
+        <div class="drawer__header">
+          <div class="drawer__close js-drawer-close">
+            <button type="button" class="icon-fallback-text">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <ul class="mobile-menu">
+          <li>
+            <div class="dropdownlink">
+              <a href="#">Trang chủ</a>
+            </div>
+          </li>
+          <li>
+            <div class="dropdownlink">
+              <a href="#">Giới thiệu</a>
+              <i class="fa fa-plus icon-plus" aria-hidden="true"></i>
+              <i class="fa fa-minus icon-minus" aria-hidden="true"></i>
+            </div>
+            <ul class="submenuItems">
+              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="#">Dự án tiêu biểu</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="dropdownlink">
+              <a href="#">Sản phẩm</a>
+              <i class="fa fa-plus icon-plus" aria-hidden="true"></i>
+              <i class="fa fa-minus icon-minus" aria-hidden="true"></i>
+            </div>
+            <ul class="submenuItems">
+              <li><a href="#">Máy phát điện Nhật Bản</a></li>
+              <li><a href="#">Máy phát điện Nhật Bản</a></li>
+              <li><a href="#">Máy phát điện Nhật Bản</a></li>
+              <li><a href="#">Máy phát điện Nhật Bản</a></li>
+              <li><a href="#">Máy phát điện Nhật Bản</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="dropdownlink">
+              <a href="#">Dịch vụ</a>
+            </div>
+          </li>
+          <li>
+            <div class="dropdownlink">
+              <a href="#">Tin tức</a>
+            </div>
+          </li>
+          <li>
+            <div class="dropdownlink">
+              <a href="#">Tuyển dụng</a>
+            </div>
+          </li>
+          <li>
+            <div class="dropdownlink">
+              <a href="#">Liên hệ</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="cart-overlay"></div>
+      <!-- end mobile-nav -->
+      <!-- start header -->
       <header>
           <div id="header_infor">
+            <div class="menu-bar text-right">
+              <i class="fa fa-bars click-menu" aria-hidden="true"></i>
+            </div>
             <img src="./images/logo.png" alt="logo" id="logo">
             <div id="wrap_flags">
                 <img src="./images/flag_1.png" alt="logo" class="flag">
@@ -30,7 +98,7 @@
             <div class="container">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="index.html">
                     <span>Trang chủ</span>
                   </a>
                 </li>
@@ -131,7 +199,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="service.html">
                     <span>Dịch vụ</span>
                   </a>
                 </li>
@@ -161,16 +229,32 @@
             </div>
           </nav>
       </header>
-      <section id="slider">
-        <div class="owl-carousel owl-theme">
-            <img src="./images/slide1.png" alt="slide" class="slide_img">
-            <img src="./images/slide2.png" alt="slide" class="slide_img">
-            <img src="./images/slide1.png" alt="slide" class="slide_img">
-            <img src="./images/slide2.png" alt="slide" class="slide_img">
-            <img src="./images/slide1.png" alt="slide" class="slide_img">
+      <!-- end header -->
+      <!-- start slider -->
+      <!-- <section id="slider">
+        <div class="slideshow-container">
+        
+          <div class="mySlides">
+            <img src="./images/slide1.png" style="width:100%" class="slider_img">
+          </div>
+        
+          <div class="mySlides">
+            <img src="./images/slide2.png" style="width:100%" class="slider_img">
+          </div>
+        
+          <div class="mySlides">
+            <img src="./images/slide1.png" style="width:100%" class="slider_img">
+          </div>
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
-      </section>
-      <section id="products">
+      </section> -->
+      <!-- end slider -->
+      <!-- start products -->
+      <!-- <section id="products">
         <div class="one_product">
           <h3>Máy phát điện Nhật Bản</h3>
           <div class="product_infor">
@@ -195,8 +279,10 @@
             </button>
           </div>
         </div>
-      </section>
-      <section id="wrap_services">
+      </section> -->
+      <!-- end products -->
+      <!-- start services -->
+      <!-- <section id="wrap_services">
         <div id="services">
           <div class="title">Dịch vụ của chúng tôi</div>
           <div id="wrap_all_services">
@@ -256,8 +342,10 @@
               <img class="service_person" src="./images/service_person.png" alt="service person">
           </div>
         </div>
-      </section>
-      <section id="news">
+      </section> -->
+      <!-- end services -->
+      <!-- start news -->
+      <!-- <section id="news">
         <div class="container">
           <h3 class="title news_title">
             Tin tức
@@ -321,8 +409,10 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="recruitment">
+      </section> -->
+      <!-- end news -->
+      <!-- start recruitment -->
+      <!-- <section id="recruitment">
         <div class="recruitment_info">
           <div class="title recruitment_title">
             Tuyển dụng
@@ -390,8 +480,10 @@
             </div>
           </div>
         </div>
-      </section>
-      <footer>
+      </section> -->
+      <!-- end recruitment -->
+      <!-- start footer -->
+      <!-- <footer>
           <div class="container">
             <h3 class="title contact_title">
               Liên hệ
@@ -434,9 +526,10 @@
               </div>
             </div>
           </div>
-      </footer>
+      </footer> -->
+      <!-- end footer -->
       <script src="js/jquery-1.12.3.min.js"></script>
-      <script src="owlcarousel/owl.carousel.min.js"></script>
+      <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
       <script src="js/index.js"></script>
       <script>
         // Initialize and add the map

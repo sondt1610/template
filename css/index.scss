@@ -464,6 +464,12 @@ nav {
             background: #eeeeee;
             width: 80%;
             margin: 0 auto;
+            .product_img{
+                position: relative;
+                transform: translateX(-50%);
+                left: 50%;
+                width: 120%;
+            }
             // img{
             //     position: absolute;
             //     top: 55px;

@@ -1297,6 +1297,11 @@ nav {
       background: #eeeeee;
       width: 80%;
       margin: 0 auto; }
+      #products .one_product .product_infor .product_img {
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 120%; }
     #products .one_product span.product_intro {
       font-family: 'Encode Sans', sans-serif;
       font-size: 16px;

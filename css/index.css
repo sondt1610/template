@@ -1067,9 +1067,10 @@ nav {
       visibility: visible;
       background: #ffffff;
       position: absolute;
-      top: 72px;
+      top: 100%;
       left: 22px;
-      max-width: 220px; }
+      width: 220px;
+      padding-left: 20px; }
       nav .container > ul > li:hover ul.sub_menu a {
         color: #626262;
         text-decoration: none; }
@@ -1296,18 +1297,24 @@ nav {
       position: relative;
       background: #eeeeee;
       width: 80%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding-bottom: 40px; }
+      #products .one_product .product_infor .wrap_product_img {
+        display: flex;
+        align-items: center;
+        height: 415px;
+        padding-top: 60px; }
       #products .one_product .product_infor .product_img {
         position: relative;
         transform: translateX(-50%);
         left: 50%;
-        width: 120%; }
+        width: 120%;
+        max-height: 100%; }
     #products .one_product span.product_intro {
       font-family: 'Encode Sans', sans-serif;
       font-size: 16px;
       line-height: 22px;
-      margin-top: 420px;
-      margin-bottom: 37px;
+      margin: 20px 0 37px 0;
       width: 283px;
       display: inline-block;
       color: #626262; }

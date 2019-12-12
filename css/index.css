@@ -1314,8 +1314,7 @@ nav {
       font-family: 'Encode Sans', sans-serif;
       font-size: 16px;
       line-height: 22px;
-      margin: 20px 0 37px 0;
-      width: 283px;
+      margin: 20px 15px 37px 15px;
       display: inline-block;
       color: #626262; }
     #products .one_product .view_product_detail {
@@ -1346,7 +1345,7 @@ nav {
     background-color: rgba(16, 68, 128, 0.8);
     position: absolute; }
   #wrap_services #wrap_all_services {
-    margin-left: 390px;
+    position: relative;
     display: flex;
     align-items: center; }
   #wrap_services #available_services {
@@ -1459,9 +1458,9 @@ nav {
       #wrap_services #services_highlights li img {
         margin-right: 19px; }
   #wrap_services img.service_person {
-    position: relative;
-    top: 0;
-    left: -88px; }
+    position: absolute;
+    top: -27px;
+    right: -125px; }
 
 .title {
   margin: 70px auto 0 auto;
@@ -1535,6 +1534,9 @@ nav {
         color: #eeeeee;
         font-size: 16px;
         line-height: 22px; }
+  #news .small_news img {
+    width: 100%;
+    height: 100%; }
   #news .small_news .date {
     color: #949494; }
   #news .small_news .small_news_title {
@@ -1545,7 +1547,7 @@ nav {
     margin: 15px 0 45px 0; }
   #news .small_news .small_news_detail {
     font-family: 'Encode Sans', sans-serif;
-    margin-top: 30px;
+    margin-top: 18px;
     color: #626262;
     font-size: 16px;
     line-height: 20px; }
@@ -1555,14 +1557,15 @@ nav {
       color: #d71635; }
 
 section#recruitment {
-  height: 594px;
-  display: flex;
-  flex-wrap: wrap; }
+  height: 594px; }
+  section#recruitment .container-fluid, section#recruitment .col-md-4, section#recruitment .col-md-8 {
+    padding-left: 0;
+    padding-right: 0; }
   section#recruitment .recruitment_info {
-    width: 33%;
     background: #104480;
     padding: 210px 56px 0 217px;
-    text-align: right; }
+    text-align: right;
+    height: 100%; }
   section#recruitment .recruitment_title {
     margin: 0;
     text-align: right; }
@@ -1589,52 +1592,49 @@ section#recruitment {
     border-radius: 5px;
     border: none;
     padding: 0; }
-  section#recruitment div#wrap_recruitment_items {
-    width: 67%;
-    display: flex; }
-    section#recruitment div#wrap_recruitment_items .wrap_recruitment_item {
-      flex: 1;
-      background: url("../images/recruitment1.png") no-repeat;
-      position: relative;
-      overflow: hidden; }
-      section#recruitment div#wrap_recruitment_items .wrap_recruitment_item .recruitment_item {
-        padding: 45px 55px 135px 58px;
-        position: relative; }
-      section#recruitment div#wrap_recruitment_items .wrap_recruitment_item:hover::before {
-        height: 110%; }
-      section#recruitment div#wrap_recruitment_items .wrap_recruitment_item:hover .recruitment_item_detail, section#recruitment div#wrap_recruitment_items .wrap_recruitment_item:hover .view_detail_news {
-        opacity: 1;
-        visibility: visible; }
-      section#recruitment div#wrap_recruitment_items .wrap_recruitment_item::before {
-        content: "";
-        display: block;
-        background: rgba(16, 68, 128, 0.8);
-        width: 100%;
-        height: 30%;
-        position: absolute;
-        transform: skewY(-7deg);
-        transform-origin: 0 0;
-        transition: all 0.5s ease-out; }
-      section#recruitment div#wrap_recruitment_items .wrap_recruitment_item .recruitment_item_title {
-        margin: 35px 0 58px;
-        color: #ffffff;
-        font-family: 'Oswald', sans-serif;
-        font-weight: bold;
-        font-size: 32px;
-        text-transform: uppercase; }
-      section#recruitment div#wrap_recruitment_items .wrap_recruitment_item .recruitment_item_detail {
-        padding-bottom: 50px;
-        color: #eeeeee;
-        font-family: 'Encode Sans', sans-serif;
-        font-size: 16px;
-        line-height: 20px;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 1s ease-out; }
-      section#recruitment div#wrap_recruitment_items .wrap_recruitment_item .view_detail_news {
-        opacity: 0;
-        visibility: hidden;
-        transition: all 1s ease-out; }
+  section#recruitment .wrap_recruitment_item {
+    flex: 1;
+    background: url("../images/recruitment1.png") no-repeat;
+    position: relative;
+    overflow: hidden; }
+    section#recruitment .wrap_recruitment_item .recruitment_item {
+      padding: 45px 55px 135px 58px;
+      position: relative; }
+    section#recruitment .wrap_recruitment_item:hover::before {
+      height: 110%; }
+    section#recruitment .wrap_recruitment_item:hover .recruitment_item_detail, section#recruitment .wrap_recruitment_item:hover .view_detail_news {
+      opacity: 1;
+      visibility: visible; }
+    section#recruitment .wrap_recruitment_item::before {
+      content: "";
+      display: block;
+      background: rgba(16, 68, 128, 0.8);
+      width: 100%;
+      height: 30%;
+      position: absolute;
+      transform: skewY(-7deg);
+      transform-origin: 0 0;
+      transition: all 0.5s ease-out; }
+    section#recruitment .wrap_recruitment_item .recruitment_item_title {
+      margin: 35px 0 58px;
+      color: #ffffff;
+      font-family: 'Oswald', sans-serif;
+      font-weight: bold;
+      font-size: 32px;
+      text-transform: uppercase; }
+    section#recruitment .wrap_recruitment_item .recruitment_item_detail {
+      padding-bottom: 50px;
+      color: #eeeeee;
+      font-family: 'Encode Sans', sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 1s ease-out; }
+    section#recruitment .wrap_recruitment_item .view_detail_news {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 1s ease-out; }
 
 footer {
   margin-top: 80px; }
@@ -1742,21 +1742,7 @@ section.services {
       color: #ffffff;
       line-height: 25px; }
 
-@media (min-width: 375px) and (max-width: 768px) {
-  #slider .dots {
-    bottom: 15px; } }
-@media (min-width: 375px) and (max-width: 1200px) {
-  header {
-    padding: 0 30px; }
-    header #wrap_flags {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-      header #wrap_flags img {
-        margin-top: 20px;
-        width: 60px;
-        height: 40px; } }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   header .menu-bar {
     opacity: 1;
     visibility: visible;
@@ -1767,5 +1753,64 @@ section.services {
 
   nav {
     display: none; } }
+@media only screen and (max-width: 1023px) {
+  #wrap_services #wrap_service_info {
+    padding-left: 30px; }
+    #wrap_services #wrap_service_info:before {
+      display: none; }
+  #wrap_services #wrap_all_services {
+    justify-content: center; }
+  #wrap_services #available_services {
+    display: none; }
+  #wrap_services img.service_person {
+    display: none; } }
+@media (max-width: 991px) {
+  #products .one_product {
+    margin-bottom: 30px; }
+    #products .one_product .product_infor {
+      width: 55%; }
+      #products .one_product .product_infor .wrap_product_img {
+        height: 350px;
+        padding-top: 30px; }
+    #products .one_product h3::after {
+      margin: 16px auto 36px auto; } }
+@media (min-width: 375px) and (max-width: 767px) {
+  #slider .dots {
+    bottom: 15px; }
+
+  #products .one_product .product_infor {
+    width: 75%; }
+    #products .one_product .product_infor .wrap_product_img {
+      height: 300px; }
+  #products .one_product h3 {
+    font-size: 28px; }
+
+  #wrap_services .title {
+    font-size: 30px; }
+  #wrap_services #wrap_service_info {
+    width: auto;
+    height: auto; }
+  #wrap_services #services_highlights {
+    display: none; }
+  #wrap_services .view_detail_service {
+    padding-bottom: 15px;
+    display: block; }
+
+  .small_news {
+    margin-top: 25px; } }
+@media (min-width: 375px) and (max-width: 1199px) {
+  #news .larger_news #larger_news_content .larger_news_detail {
+    display: none; }
+
+  header {
+    padding: 0 30px; }
+    header #wrap_flags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      header #wrap_flags img {
+        margin-top: 20px;
+        width: 60px;
+        height: 40px; } }
 
 /*# sourceMappingURL=index.css.map */

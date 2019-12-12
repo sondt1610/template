@@ -1497,8 +1497,6 @@ nav {
   margin: 85px auto 105px auto; }
   #news .news_title {
     color: #104480; }
-  #news .row {
-    height: 555px; }
   #news .larger_news {
     background: url("../images/img_news_1.png");
     height: 555px;
@@ -1556,85 +1554,87 @@ nav {
     #news .small_news .view_detail_news a {
       color: #d71635; }
 
-section#recruitment {
+section#recruitment .row {
+  margin: 0; }
+section#recruitment .container-fluid, section#recruitment .col-xl-4, section#recruitment .col-xl-8, section#recruitment .col-md-4 {
+  padding-left: 0;
+  padding-right: 0; }
+section#recruitment .wrap_recruitment_info {
+  background: #104480; }
+section#recruitment .recruitment_info {
+  text-align: right;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  width: 52%; }
+section#recruitment .recruitment_title {
+  margin: 0;
+  text-align: right; }
+  section#recruitment .recruitment_title::after {
+    display: inline-block; }
+section#recruitment .recruitment_content {
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 15.99px;
+  line-height: 21px;
+  color: #fffefe; }
+section#recruitment button.read_more {
+  padding: 15px 50px;
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 30px auto;
+  color: #fff;
+  background: #da2238;
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none; }
+section#recruitment .wrap_recruitment_item {
+  background: url("../images/recruitment1.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
   height: 594px; }
-  section#recruitment .container-fluid, section#recruitment .col-md-4, section#recruitment .col-md-8 {
-    padding-left: 0;
-    padding-right: 0; }
-  section#recruitment .recruitment_info {
-    background: #104480;
-    padding: 210px 56px 0 217px;
-    text-align: right;
-    height: 100%; }
-  section#recruitment .recruitment_title {
-    margin: 0;
-    text-align: right; }
-    section#recruitment .recruitment_title::after {
-      display: inline-block; }
-  section#recruitment .recruitment_content {
-    font-family: 'Encode Sans', sans-serif;
-    font-size: 15.99px;
-    line-height: 21px;
-    color: #fffefe; }
-  section#recruitment button.read_more {
-    width: 250px;
-    height: 55px;
-    line-height: 25px;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    display: inline-block;
-    margin: 30px auto;
-    color: #fff;
-    background: #da2238;
-    font-family: 'Encode Sans', sans-serif;
+  section#recruitment .wrap_recruitment_item .recruitment_item {
+    padding: 45px 55px 135px 58px;
+    position: relative; }
+  section#recruitment .wrap_recruitment_item:hover::before {
+    height: 125%; }
+  section#recruitment .wrap_recruitment_item:hover .recruitment_item_detail, section#recruitment .wrap_recruitment_item:hover .view_detail_news {
+    opacity: 1;
+    visibility: visible; }
+  section#recruitment .wrap_recruitment_item::before {
+    content: "";
+    display: block;
+    background: rgba(16, 68, 128, 0.8);
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    transform: skewY(-7deg);
+    transform-origin: 0 0;
+    transition: all 0.5s ease-out; }
+  section#recruitment .wrap_recruitment_item .recruitment_item_title {
+    margin: 35px 0 58px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    padding: 0; }
-  section#recruitment .wrap_recruitment_item {
-    flex: 1;
-    background: url("../images/recruitment1.png") no-repeat;
-    position: relative;
-    overflow: hidden; }
-    section#recruitment .wrap_recruitment_item .recruitment_item {
-      padding: 45px 55px 135px 58px;
-      position: relative; }
-    section#recruitment .wrap_recruitment_item:hover::before {
-      height: 110%; }
-    section#recruitment .wrap_recruitment_item:hover .recruitment_item_detail, section#recruitment .wrap_recruitment_item:hover .view_detail_news {
-      opacity: 1;
-      visibility: visible; }
-    section#recruitment .wrap_recruitment_item::before {
-      content: "";
-      display: block;
-      background: rgba(16, 68, 128, 0.8);
-      width: 100%;
-      height: 30%;
-      position: absolute;
-      transform: skewY(-7deg);
-      transform-origin: 0 0;
-      transition: all 0.5s ease-out; }
-    section#recruitment .wrap_recruitment_item .recruitment_item_title {
-      margin: 35px 0 58px;
-      color: #ffffff;
-      font-family: 'Oswald', sans-serif;
-      font-weight: bold;
-      font-size: 32px;
-      text-transform: uppercase; }
-    section#recruitment .wrap_recruitment_item .recruitment_item_detail {
-      padding-bottom: 50px;
-      color: #eeeeee;
-      font-family: 'Encode Sans', sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 1s ease-out; }
-    section#recruitment .wrap_recruitment_item .view_detail_news {
-      opacity: 0;
-      visibility: hidden;
-      transition: all 1s ease-out; }
+    font-size: 32px;
+    text-transform: uppercase; }
+  section#recruitment .wrap_recruitment_item .recruitment_item_detail {
+    padding-bottom: 50px;
+    color: #eeeeee;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-out; }
+  section#recruitment .wrap_recruitment_item .view_detail_news {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-out; }
 
 footer {
   margin-top: 80px; }
@@ -1752,7 +1752,12 @@ section.services {
     top: 18px; }
 
   nav {
-    display: none; } }
+    display: none; }
+
+  section#recruitment .wrap_recruitment_info {
+    height: 375px; }
+  section#recruitment .recruitment_info {
+    width: 34%; } }
 @media only screen and (max-width: 1023px) {
   #wrap_services #wrap_service_info {
     padding-left: 30px; }
@@ -1773,7 +1778,13 @@ section.services {
         height: 350px;
         padding-top: 30px; }
     #products .one_product h3::after {
-      margin: 16px auto 36px auto; } }
+      margin: 16px auto 36px auto; }
+
+  #map {
+    height: 500px; }
+
+  footer .title.contact_title::after {
+    top: 30px; } }
 @media (min-width: 375px) and (max-width: 767px) {
   #slider .dots {
     bottom: 15px; }
@@ -1797,7 +1808,19 @@ section.services {
     display: block; }
 
   .small_news {
-    margin-top: 25px; } }
+    margin-top: 25px; }
+
+  section#recruitment .recruitment_info {
+    width: 50%; }
+    section#recruitment .recruitment_info .recruitment_title {
+      font-size: 32px; }
+      section#recruitment .recruitment_info .recruitment_title::after {
+        margin-bottom: 21px; }
+    section#recruitment .recruitment_info .recruitment_content {
+      font-size: 14px; }
+    section#recruitment .recruitment_info button.read_more {
+      font-size: 14px;
+      padding: 10px 30px; } }
 @media (min-width: 375px) and (max-width: 1199px) {
   #news .larger_news #larger_news_content .larger_news_detail {
     display: none; }

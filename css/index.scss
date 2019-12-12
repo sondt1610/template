@@ -713,7 +713,7 @@ nav {
         color: #104480;
     }
     .row{
-        height: 555px;
+        // height: 555px;
     }
     .larger_news{
         background: url('../images/img_news_1.png');
@@ -788,19 +788,25 @@ nav {
     }
 }
 section#recruitment {
-    height: 594px;
+    // height: 594px;
     // display: flex;
     // flex-wrap: wrap;
-    .container-fluid, .col-md-4, .col-md-8{
+    .row{
+        margin: 0;
+    }
+    .container-fluid, .col-xl-4, .col-xl-8, .col-md-4{
         padding-left: 0;
         padding-right: 0;
     }
-    .recruitment_info {
-        // width: 33%;
+    .wrap_recruitment_info{
         background: #104480;
-        padding: 210px 56px 0 217px;
+    }
+    .recruitment_info {
         text-align: right;
-        height: 100%;
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+        width: 52%;
     }
     .recruitment_title {
         margin: 0;
@@ -816,8 +822,7 @@ section#recruitment {
         color: #fffefe;
     }
     button.read_more {
-        width: 250px;
-        height: 55px;
+        padding: 15px 50px;
         line-height: 25px;
         font-size: 18px;
         text-align: center;
@@ -830,23 +835,23 @@ section#recruitment {
         font-weight: bold;
         border-radius: 5px;
         border: none;
-        padding: 0;
     }
     // div#wrap_recruitment_items {
         // width: 67%;
         // display: flex;
         .wrap_recruitment_item {
-            flex: 1;
             background: url('../images/recruitment1.png') no-repeat;
+            background-size: cover;
             position: relative;
             overflow: hidden;
+            height: 594px;
             .recruitment_item{
                 padding: 45px 55px 135px 58px;
                 position: relative;
             }
             &:hover{
                 &::before{
-                    height: 110%;
+                    height: 125%;
                 }
                 .recruitment_item_detail, .view_detail_news {
                     opacity: 1;
@@ -1031,6 +1036,14 @@ section.services{
     nav{
         display: none;
     }
+    section#recruitment {
+        .wrap_recruitment_info{
+            height: 375px;
+        }
+        .recruitment_info{
+            width: 34%;
+        }
+    }
 }
 
 @media only screen and (max-width : 1023px) {
@@ -1071,6 +1084,12 @@ section.services{
             }
         } 
     }
+    #map{
+        height: 500px;
+    }
+    footer .title.contact_title::after{
+        top: 30px;
+    }
 }
 @media (min-width: 375px) and (max-width : 767px) {
     #slider{
@@ -1109,6 +1128,24 @@ section.services{
     }
     .small_news{
         margin-top: 25px;
+    }
+    section#recruitment {
+        .recruitment_info{
+            width: 50%;
+            .recruitment_title{
+                font-size: 32px;
+                &::after{
+                    margin-bottom: 21px;
+                }
+            }
+            .recruitment_content{
+                font-size: 14px;
+            }
+            button.read_more{
+                font-size: 14px;
+                padding: 10px 30px;
+            }
+        }
     }
 }
 

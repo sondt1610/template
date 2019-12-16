@@ -1,3 +1,22 @@
-$white: #ffffff;
-$light-blue: #ffffff;
-$dark-blue: #ffffff;
+// color variables 
+$white: #fff;
+$dark-white: #fffefe;
+$light-blue: #5e89d8;
+$dark-blue: #104480;
+$light-gray: #949494;
+$gray: #eee;
+$dark-gray: #626262;
+$light-orange: #eeb855;
+$light-green: #15bd15;
+$red: #d71635;
+$light-red: #f9687a;
+$dark-red: #da2238;
+$rgba8-blue: rgba(16, 68, 128, 0.8);
+
+// common mixin 
+@mixin font_oswald {
+    font-family: 'Oswald', sans-serif;
+}
+@mixin font_encode_sans {
+    font-family: 'Encode Sans', sans-serif;
+}

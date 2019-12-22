@@ -1,0 +1,25 @@
+/* Desktop (small) */
+@media only screen and (max-width : 1023px) {
+	#wrap_services{
+        #wrap_service_info{
+            padding-left: 30px;
+            &:before{
+                display: none;
+            }
+        }
+        #wrap_all_services {
+            justify-content: center;
+        }
+        #available_services{
+            display: none;
+        }
+        img{
+            &.service_person{
+                display: none;
+            }
+        }
+    }
+    .service_banner{
+        height: 300px;
+    }
+}

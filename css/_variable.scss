@@ -20,3 +20,8 @@ $rgba8-blue: rgba(16, 68, 128, 0.8);
 @mixin font_encode_sans {
     font-family: 'Encode Sans', sans-serif;
 }
+$oswald_font: "Oswald, sans-serif";
+// k nên dùng vì có thể bất tiện khi đưa các tham số vào phải theo thứ tự
+@mixin full_font($size: "15px", $weight: normal, $line-height: normal, $family: $oswald_font, $style: normal) {
+    font: $style $weight $size/$line-height $family;
+}

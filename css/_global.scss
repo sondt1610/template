@@ -1027,3 +1027,383 @@ html {
   text-transform: uppercase;
   @include font_encode_sans;
 }
+
+// styles for common components for pages
+body{
+  max-width: 1920px;
+  background: $white;
+  margin: 0 auto;
+  position: relative;
+  line-height: 1.15;
+  @include font_oswald;
+}
+.body_overlay {
+  background: transparent;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  &.open {
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 99;
+  }
+}
+// start header
+.header{
+  height: 212px;
+  // đặt tên theo kiểu BEM
+  &_infor{
+      height: 175px;
+      display: flex;
+      max-width: 1140px;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+      #wrap_flags{
+          font-size: 0;
+      }
+      .flag{
+          margin-left: 30px;
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      }
+      .flag:first-child{
+          margin-left: 0;
+      }
+  }
+  &_menu_bar{
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+  }
+  .icon_show_mobile_menu{
+      font-size: 26px;
+      color: $dark-gray;
+      cursor: pointer;
+  }
+}
+// end header
+// start nav
+nav {
+  position: relative;
+  height: 72px;
+  z-index: 10;
+  .container{
+      padding-left: 0;
+      padding-right: 0;
+  }
+  ul.sub_menu{
+      opacity: 0;
+      visibility: hidden;
+  }
+  .language {
+      width: 60px;
+      height: 20px;
+      display: inline-block;
+      background: $light-blue;
+      position: relative;
+      border-radius: 5px;
+      a {
+          position: absolute;
+          top: 0;
+          right: 0;
+          line-height: 20px;
+          text-decoration: none;
+          width: 37px;
+          background: $white;
+          border-radius: 5px;
+          color: $light-blue;
+          font-size: 14px;
+      }
+  }
+  .container >ul {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      background: $dark-blue;
+      padding: 0 50px;
+      height: 72px;
+      li.products_menu_item{
+          position: static;
+          &:hover{
+              .products_menu{
+                  visibility: visible;
+                  opacity: 1;
+              }
+          }
+      }
+      .products_menu {
+          visibility: hidden;
+          opacity: 0;
+          padding: 0 15px 60px;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: $white;
+          display: flex;
+          .one_menu_product{
+              position: relative;
+              flex: 1;
+              padding: 0 15px;
+              &::after{
+                  content: "";
+                  position: absolute;
+                  width: 1px;
+                  height: 84%;
+                  bottom: 0;
+                  right: 0;
+                  background: $light-gray;
+              }
+              &:last-child::after{
+                  display: none;
+              }
+          }
+          h3.title_menu_product {
+              text-align: left;
+              font-size: 17px;
+              font-weight: bold;
+              color: $dark-gray;
+              &:hover{
+                  color: $dark-blue;
+              }
+          }
+          .wrap_menu_product_img {
+              text-align: center;
+              height: 185px;
+          }
+          li {
+              text-align: left;
+              line-height: 36px;
+              font-size: 14px;
+              color: $light-gray;
+              &:hover{
+                  color: $dark-blue;
+                  a{
+                      border-bottom: 1px solid $dark-blue;
+                      padding-bottom: 1px;
+                  }
+              }
+          }
+      }
+      &>li:hover{
+          ul.sub_menu{
+              opacity: 1;
+              visibility: visible;
+              background: $white;
+              position: absolute;
+              top: 100%;
+              left: 22px;
+              width: 220px;
+              padding-left: 20px;
+              a{
+                  color: $dark-gray;
+                  text-decoration: none;
+              }
+              li{
+                  line-height: 55px;
+                  text-align: left;
+                  font-size: 16px;
+              }
+              li:hover{
+                  a{
+                      color: $dark-blue;
+                  }
+              }
+          }
+      }
+      &>li.active, &>li:hover{
+          &>a{
+              color: $light-blue;
+              text-decoration: none;
+              &::after{
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 7px;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  background: $light-blue;
+              }
+          }
+      }
+      li.wrap_language{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      &>li{
+          flex: 1;
+          text-align: center;
+          line-height: 72px;
+          position: relative;
+          &>a {
+              color: $white;
+              text-transform: uppercase;
+              font-weight: bold;
+              text-decoration: none;
+              font-size: 16px;
+              position: relative;
+              display: inline-block;
+          }
+      }
+  }
+}
+// end nav
+/* mobile nav */
+#nav_drawer{
+  transition: all 0.3s;
+  right: -300px;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  width: 300px;
+  background: $light-orange;
+  a {
+      text-decoration: none;
+      cursor: pointer;
+      color: $dark-gray;
+  }
+  &.open{
+      right: 0px;
+  }
+  .icon-minus{
+      display: none;
+  }
+  ul {
+      list-style: none;
+  }
+  .mobile_menu {
+      width: 100%;
+      max-width: 350px;
+      margin: 0px auto 0px auto;
+      border-radius: 4px;
+      li.open .mobile_menu_link {
+          color: $white;
+      }
+      li.open .mobile_menu_link .fa-chevron-down {
+          transform: rotate(180deg);
+      }
+      li:last-child .mobile_menu_link {
+          border-bottom: 0;
+      }
+      li.open .sub_menu {
+          display: block;
+      }
+  }
+  .drawer_header {
+      height: 65px;
+      line-height: 65px;
+      border-bottom: 0px;
+      padding: 0px 15px;
+      width: 100%;
+      text-align: right;
+      .drawer_close button {
+          right: 0px;
+          color: $white;
+          background: transparent;
+          outline: 0px;
+          border: 0px;
+          border-radius: 0px;
+          padding-right: 0px;
+          i {
+              font-size: 24px;
+          }
+          span {
+              display: inline-block;
+              margin-right: 5px;
+              transform: translateY(-3px);
+              text-transform: uppercase;
+              font-weight: bold;
+          }
+      }
+  }
+  .mobile_menu_link {
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      display: block;
+      padding: 15px 15px 15px 15px;
+      font-size: 15px;
+      color: $white;
+      position: relative;
+      transition: all 0.4s ease-out;
+      i {
+          position: absolute;
+          right: 20px;
+      }
+      .fa-chevron-down {
+          right: 12px;
+          left: auto;
+      }
+  }
+  .sub_menu {
+      display: none;
+      a {
+          display: block;
+          color: $white;
+          padding: 12px 12px 12px 45px;
+          transition: all 0.4s ease-out;
+      }
+      &:hover {
+          color: $white;
+          text-decoration: none;
+      }
+  }
+}
+/* end mobile nav */
+// start footer
+footer{
+  margin-top: 80px;
+  .title.contact_title {
+      text-align: left;
+      a{
+          color: $dark-blue;
+      }
+      &::after{
+          margin: 0;
+          position: relative;
+          top: 85px;
+          left: 0px;
+          width: 75px;
+      }
+  }
+  .row.footer_infor {
+      margin: 63px 0;
+      p {
+          margin: 0 0 55px;
+          font-size: 14px;
+          color: $light-gray;
+          @include font_encode_sans;
+          line-height: 25px;
+          &:last-child{
+              margin: 0;
+          }
+      }
+  }
+  .company_info_title {
+      font-weight: bold;
+      font-size: 24px;
+      color: $dark-gray;
+      margin-bottom: 21px;
+  }
+  .logo_footer {
+      text-align: center;
+      width: 100%;
+      p {
+          margin: 30px 0;
+          font-size: 15px;
+          color: $light-gray;
+          @include font_encode_sans;
+      }
+  }
+  #map {
+      width: 100%;
+      height: 100%;
+      background-color: grey;
+  }
+}
+// end footer

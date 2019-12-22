@@ -1,0 +1,97 @@
+/* Smart phone (large) */
+@media only screen and (max-width : 767px) {
+	header .header_infor #wrap_flags{
+        display: none;
+    }
+    #slider{
+        .dots{
+            bottom: 15px;
+        }
+    }
+    #products{
+        .one_product{
+            .product_infor{
+                width: 75%;
+                .wrap_product_img{
+                    height: 300px;
+                }
+            }
+            h3 a{
+                font-size: 28px;
+            }
+        } 
+    }
+    #wrap_services {
+        .title{
+            font-size: 30px;
+        }
+        #wrap_service_info{
+            width: auto;
+            height: auto;
+        }
+        #services_highlights {
+            display: none;
+        }
+        .view_detail_service{
+            padding-bottom: 15px;
+            display: block;
+        }
+    }
+    .small_news{
+        margin-top: 25px;
+    }
+    section#recruitment {
+        .recruitment_info{
+            width: 50%;
+            .recruitment_title{
+                a{
+                    font-size: 32px;
+                }
+                &::after{
+                    margin-bottom: 21px;
+                }
+            }
+            .recruitment_content{
+                font-size: 14px;
+            }
+            button.read_more{
+                font-size: 14px;
+                padding: 10px 30px;
+            }
+        }
+    }
+    section.services{
+        .one_service{
+            padding: 20px 0;
+            .service_logo{
+                display: none;
+            }
+            .title.service_title a{
+                font-size: 17px;
+                line-height: 25px;
+            }
+        }
+    }
+    #products{
+        margin-top: 50px;
+    }
+    #slider{
+        .slide_content {
+            width: 80%;
+            .title.slide_title{
+                a{
+                    font-size: 30px;
+                }
+                &::after{
+                    margin: 10px auto;
+                }
+            }
+            span{
+                font-size: 16px;
+            }
+        }
+    }
+    .service_banner{
+        height: 200px;
+    }
+}

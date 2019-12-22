@@ -1,0 +1,39 @@
+/* Tablet */
+@media only screen and (max-width : 991px) {
+	#products{
+        .one_product{
+            margin-bottom: 30px;
+            .product_infor{
+                width: 55%;
+                .wrap_product_img{
+                    height: 350px;
+                    padding-top: 30px;
+                }
+            }
+            h3::after{
+                margin: 16px auto 36px auto;
+            }
+        } 
+    }
+    footer #map{
+        height: 500px;
+    }
+    footer .title.contact_title::after{
+        top: 30px;
+    }
+    #slider{
+        .slide_content {
+            .title.slide_title{
+                a {
+                    font-size: 50px;
+                }
+                &::after{
+                    margin-bottom: 30px;
+                }
+            }
+            span{
+                font-size: 23px;
+            }
+        }
+    }
+}

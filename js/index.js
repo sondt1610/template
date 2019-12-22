@@ -46,6 +46,6 @@ $(document).ready(function(){
         // assign index of current slide item
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 8000); // Change image every 8 seconds
+        // setTimeout(showSlides, 8000); // Change image every 8 seconds
     }
 });

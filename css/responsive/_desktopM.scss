@@ -1,0 +1,56 @@
+/* Desktop (medium) */
+@media only screen and (max-width : 1199px) {
+	#news .larger_news #larger_news_content .larger_news_detail{
+        display: none;
+    }
+    section.services{
+        .service_content_item{
+            height: auto;
+        }
+        .one_service p{
+            display: none;
+        }
+    }
+    .header{
+        padding: 0 30px;
+        #wrap_flags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            img{
+                margin-top: 20px;
+                width: 60px;
+                height: 40px;
+            }
+        }
+        &_menu_bar{
+            opacity: 1;
+            visibility: visible;
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 18px;
+        }
+    }
+    nav{
+        display: none;
+    }
+    section#recruitment {
+        .wrap_recruitment_info{
+            height: 375px;
+        }
+        .recruitment_info{
+            width: 34%;
+        }
+    }
+    #slider{
+        .slide_content {
+            .title.slide_title a{
+                font-size: 70px;
+            }
+            span{
+                font-size: 36px;
+            }
+        }
+    }
+}

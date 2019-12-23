@@ -1,6 +1,6 @@
-@import 'reset';
-@import 'variable';
-@import 'global';
+@import './common/reset';
+@import './common/variable';
+@import './common/global';
 
 // start slider
 #slider{

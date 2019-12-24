@@ -1,4 +1,6 @@
-/*GLOBAL */
+/*# sourceURL=./css/style.css */
+/*@ sourceURL=./css/style.css */
+/*GLOBALa */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1176,7 +1178,8 @@ footer {
       #slider .slide_content .title.slide_title a {
         font-size: 10rem;
         margin: 0 auto;
-        color: royalblue; }
+        color: red;
+        }
     #slider .slide_content span {
       font-size: 5rem;
       color: #fff; }
@@ -1254,7 +1257,7 @@ footer {
   font-size: 0;
   margin-top: 83px;
   height: 800px;
-  background: url("../images/service_bg.png");
+  background: url("http://localhost:3001/css/../images/service_bg.png");
   position: relative; }
   #wrap_services::before {
     top: 0;
@@ -1387,7 +1390,7 @@ footer {
   #news .news_title a {
     color: #104480; }
   #news .larger_news {
-    background: url("../images/img_news_1.png");
+    background: url("http://localhost:3001/css/../images/img_news_1.png");
     height: 555px;
     position: relative;
     overflow: hidden; }
@@ -1525,7 +1528,7 @@ section#recruitment .wrap_recruitment_item {
     transition: all 1s ease-out; }
 
 .service_banner {
-  background: url("../images/service_banner.png") no-repeat center;
+  background: url("http://localhost:3001/css/../images/service_banner.png") no-repeat center;
   background-size: cover;
   max-width: 1920px;
   height: 466px;

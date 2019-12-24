@@ -1,37 +1,46 @@
-var gulp = require('gulp');
+const gulp         = require('gulp');
+const browserSync  = require('browser-sync').create();
+const sass         = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+// const csso         = require('gulp-csso');
+// const sourcemaps   = require('gulp-sourcemaps');
+// const rmEmtyLine   = require('gulp-remove-empty-lines');
+// const gulpHeader   = require('gulp-header');
 
-// Requires the gulp-sass plugin
-var sass = require('gulp-sass');
+// Compile Sass & Inject Into Browser
+// gulp.task('sass', function() {
+//     return gulp.src(['css/*.scss'])
+//         .pipe(sourcemaps.init())
+//         .pipe(sass({outputStyle: 'compact'}))
+//         .pipe(gulpHeader('@charset "utf-8";'))
+//         .pipe(rmEmtyLine())
+//         .pipe(autoprefixer({
+//             browsers: ['last 2 versions'],
+//             cascade: false
+//         }))
+//         // .pipe(csso())
+//         .pipe(sourcemaps.write('./'))
+//         .pipe(gulp.dest("css/"))
+//         .pipe(browserSync.stream());
+// });
 
-gulp.task('hello', async function () {
-    console.log('Hello Zell');
-});
 
-gulp.task('sass', function(){
-    return gulp.src('app/scss/**/*.scss')
-      .pipe(sass()) // Using gulp-sass
-      .pipe(gulp.dest('app/css'))
-      .pipe(browserSync.reload({
-        stream: true
-      }))
-});
+// Watch Sass & Serve
+// gulp.task('serve', ['sass'], function() {
+//     browserSync.init({
+//         server: "./"  
+//     });
 
-var browserSync = require('browser-sync').create();
-gulp.task('browserSync', function() {
+//     gulp.watch(['css/*.scss'], ['sass']);
+//     gulp.watch("./*.html").on('change', browserSync.reload);
+// });
+
+gulp.task('nam', function() {
     browserSync.init({
-      server: {
-        baseDir: 'app'
-      },
-    })
-  })
+        server: "./app/"  
+    });
+    gulp.watch("./app/*.html").on('change', browserSync.reload);
+});
 
-gulp.task('watch', gulp.series('sass',  function (){
-    console.log(123);
-    gulp.task('browserSync');
-    gulp.watch('app/scss/**/*.scss', gulp.series('sass')); 
-    // Other watchers
-    // Reloads the browser whenever HTML or JS files change
-    gulp.watch('app/*.html', browserSync.reload); 
-    gulp.watch('app/js/**/*.js', browserSync.reload); 
-}, 'browserSync'))
-
+// Default Task
+// gulp.task('default', ['serve']);

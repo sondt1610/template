@@ -35,3 +35,8 @@ gulp.task('watch', gulp.series('sass',  function (){
     gulp.watch("app/scss/**/*.scss").on('change', browserSync.reload);
 }))
 
+4 echo(abc) => warning
+5 testFunction=>Fatal
+6 explode expect 2 para => warning
+7 tes(a) => compile parse
+10: 1->3-4-5

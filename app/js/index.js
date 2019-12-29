@@ -1,4 +1,16 @@
 $(document).ready(function(){
+
+    function bike() {
+        console.log(this.name);
+      }
+      
+      var name = "Ninja";
+      var obj1 = { name: this, bike: bike };
+      var obj2 = { name: this, bike: bike };
+      
+    //   bike();           // "Ninja"
+      console.log("TCL: obj1.name", obj1.name)
+    //   obj2.bike();      // "Gixxer"
     // hide mobile menu
     $("#nav_drawer .drawer_header .drawer_close button").click(function () {
         $("#nav_drawer").removeClass("open");
